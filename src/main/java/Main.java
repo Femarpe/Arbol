@@ -14,8 +14,13 @@ public class Main {
         nodo.addChild(nodo1);
         nodo.addChild(nodo2);
         nodo2.addChild(nodo3);
+        nodo3.addChild(nodo4);
+        nodo4.addChild(nodo5);
+        nodo5.addChild(nodo6);
+        nodo5.addChild(nodo7);
 
-        nodo3.getAscendentCount();
+        System.out.println(nodo5.getAscendentCount());;
         System.out.println(nodo.getClildcount());
+        nodo7.getroot();
     }
 }

@@ -83,12 +83,9 @@ public class Node<T> {
 
         while (node.parent != null) {
 
-
             node = node.getParent();
 
-
             salida++;
-
 
         }
         return salida;
@@ -97,11 +94,25 @@ public class Node<T> {
     public int getDescendentCount() {
         int salida = 0;
 
+        for (int i = 0; i < getClildcount() ; i++) {
+            Node hijoI = childList.get(1);
+
+        }
+
         return salida;
     }
 
-    public void getroot() {
+    public Node getroot() {
+        Node salida = null;
+        Node<T> node = this;
 
+        while (node.parent != null) {
+
+            node = node.getParent();
+
+        }
+
+        return node;
     }
 
 }
